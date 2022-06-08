@@ -110,6 +110,7 @@ Mrref = np.column_stack((M,B))
 # all elements in M should be uint8
 
 # Reduced Row Echelon Form (RREF) in GF(2) untuk invers Hk
+# Thanks for popcornell for methode of gf2elim for find invers matrix
 @jit(nopython = True)
 def gf2elim(Mrref):
     m,n = Mrref.shape
